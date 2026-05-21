@@ -1,3 +1,5 @@
+// src/server.js
+
 const app = require("./app");
 
 // PORT будет такой же как в env, или 3000
