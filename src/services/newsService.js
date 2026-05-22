@@ -9,6 +9,7 @@ async function getNews(query) {
       apiKey: process.env.NEWS_API_KEY, // api ключ
       pageSize: 10, // Сколько новостей нужно
     },
+    timeout: 5000,
   });
 
   // Из всего ответа от newsapi нам нужны только articles (новости)
