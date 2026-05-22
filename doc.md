@@ -98,7 +98,7 @@ npm install -D nodemon
 ```json
 "scripts": {
   "start": "node src/server.js",
-  "dev": "nodemon src/server.js",
+  "dev": "nodemon src/server.js"
 },
 ```
   
@@ -453,5 +453,4 @@ const app = require("../src/app");
 
 // Экспортируем приложение как безсерверное
 module.exports = serverless(app);
-
 ```
