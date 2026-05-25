@@ -85,7 +85,7 @@
 **Создадим проект и скачаем библиотеки:**
 ```bash
 npm init -y
-npm install express axios dotenv serverless-http
+npm install express axios dotenv
 npm install -D nodemon
 ```
 
@@ -157,8 +157,6 @@ node_modules
 │   ├── index.html
 │   └── js
 │       └── app.js
-├── api
-│   └── index.js
 └── src
     ├── app.js
     ├── controllers
@@ -444,13 +442,20 @@ searchBtn.addEventListener("click", async () => {
 renderSavedNews();
 ```
 
+## Завершаем код
+
+1. Запустите проект и проверьте, что он вам нравится
+2. Напишите README.md файл, который бы помог пользователю, незнакомому в проектом запустить его со своего компьютера (в начале были требования)
+3. Загрузите все необходимые файлы на github [по презентации](./assets/git.pdf)
+
 ---
 
-**api/index.js**
-```js
-const serverless = require("serverless-http");
-const app = require("../src/app");
+# Публикуем
 
-// Экспортируем приложение как безсерверное
-module.exports = serverless(app);
-```
+Есть много вариантов как обупликовать свой сайт
+
+[Презентация](./assets/render.pdf)
+
+---
+
+Расскажите преподавателю код. Дальше останется только [заполнить документы](https://disk.yandex.kz/client/disk/ithub/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0_%D0%92%D0%A0)
